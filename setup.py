@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="st_speckmol",
-    version="0.0.1",
+    version="0.0.3",
     author="Avratanu Biswas",
     author_email="avrab.yt@gmail.com",
     description="Streamlit component for for Speck molecule visualization.",
@@ -13,5 +13,5 @@ setuptools.setup(
     include_package_data=True,
     classifiers=[],
     python_requires=">=3.6",
-    install_requires=["streamlit >= 0.63", "ipyspeck==0.6.0", "ipywidgets==7.7.0"],
+    install_requires=["streamlit >= 0.63", "ipyspeck==0.6.1", "ipywidgets==7.6.3"],
 )

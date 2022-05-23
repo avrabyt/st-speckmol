@@ -1,6 +1,6 @@
 import streamlit as st
 import glob
-from speckmol.funx import spec_plot
+from st_speckmol import spec_plot
 
 # Example files path
 ex_files = glob.glob("examples/*.xyz")
