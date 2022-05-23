@@ -28,7 +28,7 @@ res = spec_plot(example_xyz)
 
 ![Speclit demo](https://github.com/avrabyt/Specklit/blob/main/SpeckLit_demo.gif)
 
-Meanwhile,ipyspeck in their latest release ` 0.6.1 ` has added the stspec module [https://github.com/avrabyt/Specklit/issues/1#issuecomment-1134798584], therefore feel free to use whatever convinient, as long as you are interested to have fun with beautiful speck strcutures 🧬 and streamlit 🎈 🎉
+Meanwhile,[ipyspeck](https://pypi.org/project/ipyspeck/) in their latest release ` 0.6.1 ` has added the stspec module [https://github.com/avrabyt/Specklit/issues/1#issuecomment-1134798584], therefore feel free to use whatever convinient, as long as you are interested to have fun with beautiful speck strcutures 🧬 and streamlit 🎈 🎉
 
 # References
 
