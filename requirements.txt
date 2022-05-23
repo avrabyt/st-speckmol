@@ -1,3 +1,2 @@
-ipyspeck==0.6.0
-ipywidgets==7.7.0
 streamlit==1.8.1
+st-speckmol==0.0.3
