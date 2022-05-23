@@ -1,0 +1,8 @@
+# production
+
+dist
+# misc
+.DS_Store
+
+*.egg-info
+__pycache__
