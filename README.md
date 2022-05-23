@@ -3,7 +3,9 @@ Speck figures to Streamlit Web App
 
 
 ## Installation
-`pip install st-speckmol==0.0.3`
+```
+pip install st-speckmol==0.0.3
+```
 
 ## Example
 
