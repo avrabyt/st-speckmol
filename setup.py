@@ -1,4 +1,5 @@
-from setuptools import setup
+import setuptools
+
 
 # read the contents of your README file
 with open("README.md", "r", encoding='utf8') as fh:
