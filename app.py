@@ -8,5 +8,7 @@ with st.sidebar:
     example_xyz = st.selectbox("Select a molecule",ex_files)
     f = open(example_xyz,"r")
     example_xyz = f.read()
+    st.sidebar.info(example_xyz.splitlines()[1])
 
 res = spec_plot(example_xyz)
+
