@@ -1,6 +1,22 @@
 # Specklit
 Speck figures to Streamlit Web App
 
+<table>
+    <tr>
+        <td>Latest Release</td>
+        <td>
+            <a href="https://pypi.org/project/st-speckmol/"/>
+            <img src="https://static.pepy.tech/badge/st-speckmol"/>
+        </td>
+    </tr>
+    <tr>
+        <td>PyPI Downloads</td>
+        <td>
+            <a href="https://pepy.tech/project/st-speckmol"/>
+            <img src="https://static.pepy.tech/badge/st-speckmol/month"/>
+        </td>
+    </tr>
+</table>
 
 ## Installation
 ```
