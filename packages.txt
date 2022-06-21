@@ -1,1 +1,1 @@
-openbabel
+openbabel==3.1
