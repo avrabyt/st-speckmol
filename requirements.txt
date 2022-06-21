@@ -1,4 +1,4 @@
 requests
 streamlit==1.10.0
 st-speckmol==0.0.3
-openbabel
+openbabel==3.1
