@@ -18,8 +18,8 @@ Speck figures to Streamlit Web App
     </tr>
 </table>
 
-## Installation
-```
+## Installation 
+```console
 pip install st-speckmol==0.0.3
 ```
 
