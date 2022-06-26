@@ -25,7 +25,7 @@ pip install st-speckmol==0.0.3
 
 ## Example
 
-```
+``` python
 import streamlit as st
 import glob
 from st_speckmol import spec_plot
