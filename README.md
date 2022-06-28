@@ -26,6 +26,7 @@ pip install st-speckmol
 ## Example
 
 Try the app, for different examples. 
+
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/avrabyt/specklit/main/app.py)
 
 
