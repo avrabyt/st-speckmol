@@ -24,7 +24,7 @@ pip install st-speckmol
 ```
 to upgrade use,
 ```console
-pip install --upgrade streamlit
+pip install --upgrade st-speckmol
 ```
 
 ## Example
