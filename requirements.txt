@@ -3,4 +3,4 @@ streamlit==1.10.0
 st-speckmol==0.0.3
 # https://github.com/openbabel/openbabel/releases/tag/openbabel-3-1-1
 # git+https://github.com/SomePackage.git@main#egg=SomePackage
-https://github.com/openbabel/openbabel.git
+git+https://github.com/openbabel/openbabel.git
