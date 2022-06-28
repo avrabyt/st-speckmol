@@ -20,10 +20,14 @@ Speck figures to Streamlit Web App
 
 ## Installation 
 ```console
-pip install st-speckmol==0.0.3
+pip install st-speckmol
 ```
 
 ## Example
+
+Try the app, for different examples.
+
+### Quickstart
 
 ``` python
 import streamlit as st
