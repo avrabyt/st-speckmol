@@ -1,2 +1,4 @@
-libopenbabel-dev
-python3-openbabel
+libopenbabel-dev \
+libopenbabel6 \
+python3-openbabel \
+openbabel
