@@ -1,63 +1,7 @@
-import requests
-#import openbabel
 import streamlit.components.v1 as components
 import ipywidgets as widgets
 from ipywidgets import embed
 import ipyspeck
-
-
-def pdb2xyz(pdb_file,type='.pdb'):
-    """
-    Reads a pdb file and returns the xyz string.
-    """
-    if type == '.pdb':
-        url = "https://files.rcsb.org/view/" + pdb_file + type
-    elif type == '.sdf':
-        url = "https://files.rcsb.org/ligands/view/" + pdb_file + type 
-    else:
-        None
-    
-    if not(None):       
-        r = requests.get(url)
-        obConversion = openbabel.OBConversion()
-        obConversion.SetInAndOutFormats("pdb", "xyz")
-        mol = openbabel.OBMol()
-        obConversion.ReadString(mol, r.text)
-        xyz_mol = obConversion.WriteString(mol)
-    return  xyz_mol
-
-def add_spec_param(xyz, **kwargs):
-    param = dict(*kwargs.values())
-    for key,value in param.items():
-        if key == 'outline':
-            xyz.outline = value 
-        if key == 'bonds':
-            xyz.bonds = value  # Bool (0|1) 
-        if key == 'atomScale':
-            xyz.atomScale = value
-        if key == 'relativeAtomScale':
-            xyz.relativeAtomScale = value
-        if key == 'bondScale':
-            xyz.bondScale = value
-        if key == 'brightness':
-            xyz.brightness = value
-        if key == 'spf':
-            xyz.spf = value
-        if key == 'bondThreshold':
-            xyz.bondThreshold = value
-        if key == 'bondShade':
-            xyz.bondShade = value
-        if key == 'atomShade':
-            xyz.atomShade = value
-        if key == 'dofStrength':
-            xyz.dofStrength = value
-        if key == 'dofPosition':
-            xyz.dofPosition = value    
-        if key == 'width':
-            xyz.width = value
-        if key == 'height':
-            xyz.height = value
-    return None
 
 def spec_plot(_xyz, wbox_height="700px", 
             wbox_width="800px",
@@ -116,3 +60,85 @@ def spec_plot(_xyz, wbox_height="700px",
     html = embed.html_template.format(title="", snippet=sc)
     components.html(html,height = component_h, width = component_w,scrolling=scroll)
     return spec_xyz
+
+def add_spec_param(xyz, **kwargs):
+    '''
+    Helper function for spec_plot. Called within the function to add
+    parameters / attributes to the molecules.
+    
+    Attributes
+    ----------
+    _view_name : str
+        (DOMWidget) Name of the widget view class in front-end
+    _model_name :dofStrength
+        Name of the widget model class in front-end
+    _view_module : str
+        (DOMWidget) Name of the front-end module containing widget view
+    _model_module : str
+        (DOMWidget) Name of the front-end module containing widget model
+    _view_module_version : str
+        (DOMWidget) Version of the front-end module containing widget view
+    _model_module_version : str
+        (DOMWidget) Version of the front-end module containing widget model
+    data : str
+        xyz model, default(True)
+    bonds : bool
+        Enable visualizations of bonds?, default(True)
+    atomScale : float
+        Atom radius, size of spheres, default(0.24)
+    relativeAtomScale : float
+        Relative atom radius, default(0.64)
+    bondScale : float
+        bonds size, size of the tubes connecting atoms, default(0.5)
+    brightness : float
+        brightness, default(0.5)
+    outline : float
+        Outline strength, default(0.0)
+    spf : float
+        Samples per frame, default(32)
+    bondThreshold : float
+        Bonding radius, defines the max distance for atoms to be connected,
+        default(1.2)
+    bondShade : float
+        bonds shade, default(0.5)
+    atomShade : float
+        Atoms shade, default(0.5)
+    dofStrength : float
+        Depth of field strength, default(0.0)
+    dofPosition : float
+        Depth of field position, default(0.5)
+
+    Reference - https://github.com/denphi/speck/blob/master/widget/ipyspeck/ipyspeck/speck.py    
+
+    '''
+    param = dict(*kwargs.values())
+    for key,value in param.items():
+        if key == 'outline':
+            xyz.outline = value 
+        if key == 'bonds':
+            xyz.bonds = value   
+        if key == 'atomScale':
+            xyz.atomScale = value
+        if key == 'relativeAtomScale':
+            xyz.relativeAtomScale = value
+        if key == 'bondScale':
+            xyz.bondScale = value
+        if key == 'brightness':
+            xyz.brightness = value
+        if key == 'spf':
+            xyz.spf = value
+        if key == 'bondThreshold':
+            xyz.bondThreshold = value
+        if key == 'bondShade':
+            xyz.bondShade = value
+        if key == 'atomShade':
+            xyz.atomShade = value
+        if key == 'dofStrength':
+            xyz.dofStrength = value
+        if key == 'dofPosition':
+            xyz.dofPosition = value    
+        if key == 'width':
+            xyz.width = value
+        if key == 'height':
+            xyz.height = value
+    return None

@@ -1,13 +1,12 @@
 import setuptools
 
-
 # read the contents of your README file
 with open("README.md", "r", encoding='utf8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
     name="st_speckmol",
-    version="0.0.3",
+    version="0.0.5",
     author="Avratanu Biswas",
     author_email="avrab.yt@gmail.com",
     description="Streamlit component for for Speck molecule visualization.",
