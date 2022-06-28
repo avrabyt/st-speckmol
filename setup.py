@@ -6,7 +6,7 @@ with open("README.md", "r", encoding='utf8') as fh:
 
 setuptools.setup(
     name="st_speckmol",
-    version="0.0.5",
+    version="0.0.5.1",
     author="Avratanu Biswas",
     author_email="avrab.yt@gmail.com",
     description="Streamlit component for for Speck molecule visualization.",
