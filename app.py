@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-import openbabel
+from openbabel import openbabel
 from st_speckmol import spec_plot
 
 
