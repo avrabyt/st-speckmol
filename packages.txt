@@ -1,3 +1,4 @@
 libopenbabel-dev 
+libopenbabel4
 python3-openbabel 
 openbabel
