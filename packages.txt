@@ -1,4 +1,3 @@
 libopenbabel-dev 
-libopenbabel4
 python3-openbabel 
-openbabel
+openbabel>=1.8
