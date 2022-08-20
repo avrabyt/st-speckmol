@@ -1,4 +1,4 @@
-# Specklit
+# Speckmol
 A Streamlit Component for creating Speck molecular structures within Streamlit Web app.
 
 <table>
