@@ -1,3 +1,4 @@
 libopenbabel-dev 
+libopenbabel6
 python3-openbabel 
-openbabel==1.8
+openbabel
