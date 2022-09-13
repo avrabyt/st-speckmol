@@ -39,6 +39,7 @@ def pdb2xyz(pdb_file,type='.pdb'):
         # obConversion = openbabel.OBConversion()
         # obConversion.SetInAndOutFormats("pdb", "xyz")
         # mol = openbabel.OBMol()
+        st.write(r)
         mol = pybel.readstring('pdb',r)
         # obConversion.ReadString(mol, r.text)
         # xyz_mol = obConversion.WriteString(mol)
