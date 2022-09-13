@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from openbabel import openbabel
+from openbabel import pybel
 from st_speckmol import spec_plot
 
 
@@ -17,11 +17,13 @@ def pdb2xyz(pdb_file,type='.pdb'):
     
     if not(None):       
         r = requests.get(url)
-        obConversion = openbabel.OBConversion()
-        obConversion.SetInAndOutFormats("pdb", "xyz")
-        mol = openbabel.OBMol()
-        obConversion.ReadString(mol, r.text)
-        xyz_mol = obConversion.WriteString(mol)
+        # obConversion = openbabel.OBConversion()
+        # obConversion.SetInAndOutFormats("pdb", "xyz")
+        # mol = openbabel.OBMol()
+        mol = pybel.readstring('pdb',r)
+        # obConversion.ReadString(mol, r.text)
+        # xyz_mol = obConversion.WriteString(mol)
+        xyz_mol = mol.write('xyz')
     return  xyz_mol
 
 # Added from stmol example
