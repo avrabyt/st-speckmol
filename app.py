@@ -20,8 +20,7 @@ except ModuleNotFoundError as e:
     time.sleep(90)
     
 import os
-from openbabel import pybel
-
+from openbabel import openbabel
 
 def pdb2xyz(pdb_file,type='.pdb'):
     """
@@ -36,14 +35,14 @@ def pdb2xyz(pdb_file,type='.pdb'):
     
     if not(None):       
         r = requests.get(url)
-        # obConversion = openbabel.OBConversion()
-        # obConversion.SetInAndOutFormats("pdb", "xyz")
-        # mol = openbabel.OBMol()
-        st.write(r)
-        mol = pybel.readstring('pdb',r)
-        # obConversion.ReadString(mol, r.text)
-        # xyz_mol = obConversion.WriteString(mol)
-        xyz_mol = mol.write('xyz')
+        obConversion = openbabel.OBConversion()
+        obConversion.SetInAndOutFormats("pdb", "xyz")
+        mol = openbabel.OBMol()
+        # st.write(r)
+        #mol = pybel.readstring('pdb',r)
+        obConversion.ReadString(mol, r.text)
+        xyz_mol = obConversion.WriteString(mol)
+        # xyz_mol = mol.write('xyz')
     return  xyz_mol
 
 # Added from stmol example
