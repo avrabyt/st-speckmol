@@ -1,7 +1,26 @@
 import streamlit as st
 import requests
-from openbabel import pybel
+# from openbabel import pybel
 from st_speckmol import spec_plot
+
+# https://github.com/manassharma07/crysx-compchem-file-converter/blob/main/CrysX_CompChem_FileConversion.py
+
+import subprocess
+import sys
+import time
+
+try:
+    # from openbabel import OBMol, OBConversion
+    import openbabel
+except ModuleNotFoundError as e:
+    subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/usr/include/openbabel3" --global-option="-L/usr/lib/openbabel" openbabel'], shell=True)
+    subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/home/appuser/include/openbabel3" --global-option="-L/home/appuser/lib/openbabel" openbabel'], shell=True)
+    subprocess.Popen([f'{sys.executable} -m pip install --global-option=build_ext --global-option="-I/home/appuser/usr/include/openbabel3" --global-option="-L/home/appuser/usr/lib/openbabel" openbabel'], shell=True)
+    # wait for subprocess to install package before running your actual code below
+    time.sleep(90)
+    
+import os
+from openbabel import pybel
 
 
 def pdb2xyz(pdb_file,type='.pdb'):
