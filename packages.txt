@@ -1,3 +1,3 @@
-libopenbabel-dev 
-python3-openbabel 
+swig
 openbabel
+libopenbabel-dev
