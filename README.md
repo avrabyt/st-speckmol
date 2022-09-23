@@ -80,7 +80,7 @@ from stmol import speck_plot
 
 ```
 
-Incase you are using `StSpeckmol` for scientific purposes, make sure you use `Stmol` (https://doi.org/10.3389/fmolb.2022.990846) and cite as following, 
+Incase you are using `StSpeckmol` for scientific purposes for speck visualization, make sure you use `Stmol` (https://doi.org/10.3389/fmolb.2022.990846) and cite as following, 
 ```console
 Nápoles-Duarte JM, Biswas A,Parker MI, Palomares-Baez JP, Chávez-Rojo MA and Rodríguez-Valdez LM (2022), 
 Stmol: A component for building interactive molecular visualizations within streamlit web-applications.
