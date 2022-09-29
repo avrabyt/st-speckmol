@@ -10,10 +10,10 @@ image = Image.open("Resources/mol.png")
 st.image(image)
 
 st.sidebar.header("Current stable release")
-st.sidebar.markdown(
-    '''console
+st.sidebar.code (
+    '''
     import st_speckmol
-    st_speckmol.__version__
+    st_speckmol.__version__, language="python"
 
 ''')
 
