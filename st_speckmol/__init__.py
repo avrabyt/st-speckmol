@@ -3,6 +3,7 @@ import streamlit.components.v1 as components
 import ipywidgets as widgets
 from ipywidgets import embed
 import ipyspeck
+from .version import __version__
 
 def speck_plot(_xyz, wbox_height="700px", 
             wbox_width="800px",

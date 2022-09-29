@@ -39,7 +39,7 @@ Try the app, for different examples.
 ``` python
 import streamlit as st
 import glob
-from st_speckmol import spec_plot
+from st_speckmol import speck_plot
 
 # Example files path
 ex_files = glob.glob("examples/*.xyz")
@@ -48,7 +48,7 @@ with st.sidebar:
     f = open(example_xyz,"r")
     example_xyz = f.read()
 
-res = spec_plot(example_xyz)
+res = speck_plot(example_xyz)
 
 ```
 
@@ -69,7 +69,7 @@ res = spec_plot(example_xyz)
 
 ## Related library - [Stmol](https://github.com/napoles-uach/stmol) 
 
-During the development of the related and popular library [Stmol](https://github.com/napoles-uach/stmol), we introduced `speck_plot()` function for easy usage of both libraries simultaneously. However, the entire StSpeckmol has not yet been merged and extra(read new) functions such as `add_spec_param` is only available with this library.
+During the development of the related and popular library [Stmol](https://github.com/napoles-uach/stmol), we introduced `speck_plot()` function for easy usage of both libraries simultaneously. However, the entire StSpeckmol has not yet been merged and extra(read new) functions such as `add_speck_param` is only available with this library.
 
 ```python
 # Installation of Stmol
