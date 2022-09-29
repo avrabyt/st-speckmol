@@ -1,5 +1,5 @@
 import streamlit as st
-from st_speckmol import spec_plot
+from st_speckmol import speck_plot
 
 st.markdown('''# st-speckmol :package:
 _A Streamlit **Component** for creating Speck molecular structures within Streamlit Web app._
@@ -18,7 +18,7 @@ _xyz = st.sidebar.text_area(
                 value = example_xyz, height  = 200)
 
 st.code(_xyz.splitlines()[1])
-res = spec_plot(_xyz)
+res = speck_plot(_xyz)
 
 with st.sidebar.expander("Notes:",expanded=True):
     

@@ -1,6 +1,6 @@
 import streamlit as st
 import glob
-from st_speckmol import spec_plot
+from st_speckmol import speck_plot
 
 st.markdown('''# st-speckmol :package:
 _A Streamlit **Component** for creating Speck molecular structures within Streamlit Web app._
@@ -26,14 +26,14 @@ _PARAMETERS = {'outline': outl , 'bondScale': bond_scale,
                 'bonds': bond ,'bondShade' : bondShade,
                 'brightness': brightness, 'relativeAtomScale':relativeAtomScale,
                 }
-res = spec_plot(example_xyz,_PARAMETERS = _PARAMETERS,wbox_height="500px",wbox_width="500px")
+res = speck_plot(example_xyz,_PARAMETERS = _PARAMETERS,wbox_height="500px",wbox_width="500px")
 
 with st.expander('Code',expanded=False):
     st.code(
         '''
         import streamlit as st
     import glob
-    from st_speckmol import spec_plot
+    from st_speckmol import speck_plot
 
     # Example files path
     ex_files = glob.glob("xyz_mol_examples/*.xyz")
@@ -55,6 +55,6 @@ with st.expander('Code',expanded=False):
                     'bonds': bond ,'atomShade' : atomShade,
                     'brightness': brightness, 'relativeAtomScale':relativeAtomScale,
                     }
-    res = spec_plot(example_xyz,_PARAMETERS = _PARAMETERS,wbox_height="500px",wbox_width="500px")
+    res = speck_plot(example_xyz,_PARAMETERS = _PARAMETERS,wbox_height="500px",wbox_width="500px")
         '''
     )

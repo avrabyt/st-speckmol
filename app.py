@@ -10,8 +10,8 @@ st.image(image)
 st.sidebar.header(":sparkles: Install")
 st.sidebar.code('''pip install st-speckmol''')
 st.sidebar.subheader(':rocket: Usage')
-st.sidebar.code('from st_speckmol import spec_plot')
-st.sidebar.markdown(":heavy_check_mark: Quick Note: The module is **'spec_plot'** not ~~spec**k**_plot~~")
+st.sidebar.code('from st_speckmol import speck_plot')
+st.sidebar.markdown(":heavy_check_mark: Quick Note: The function `spec_plot` will be deprecated in furture release. Instead use `speck_plot`")
 
 st.sidebar.markdown(''' 
 ---------
