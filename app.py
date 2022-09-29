@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import st_speckmol
 st.markdown('''# st-speckmol :package: [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/avrabyt/st-speckmol)
 _A Streamlit **Component** for creating Speck molecular structures within Streamlit Web app._
 
