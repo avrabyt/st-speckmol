@@ -7,6 +7,16 @@ _A Streamlit **Component** for creating Speck molecular structures within Stream
 
 image = Image.open("Resources/mol.png")
 st.image(image)
+
+st.sidebar.header("Current stable release")
+st.sidebar.markdown(
+    '''console
+    import st_speckmol
+    st_speckmol.__version__
+
+''')
+
+st.sidebar.success("Version :" + st_speckmol.__version__)
 st.sidebar.header(":sparkles: Install")
 st.sidebar.code('''pip install st-speckmol''')
 st.sidebar.subheader(':rocket: Usage')
