@@ -13,7 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     #url="https://github.com/avrabyt/Specklit",
-    url = "https://github.com/avrabyt/st-speckmol/tree/dev0.0.5.2"
+    url = "https://github.com/avrabyt/st-speckmol/tree/dev0.0.5.2",
     packages=setuptools.find_packages(),
     include_package_data=True,
     classifiers=[],
