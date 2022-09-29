@@ -1,3 +1,3 @@
-streamlit==1.10.0
+streamlit
 st-speckmol
 Pillow 
