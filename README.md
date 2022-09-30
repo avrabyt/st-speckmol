@@ -58,7 +58,7 @@ res = speck_plot(example_xyz)
 <details>
   <summary>See the tutorial video</summary>
 
-[![How to Build PROTEIN VISUALIZATION WEB-APP using PYTHON and STREAMLIT | PART 1] (https://github.com/avrabyt/st-speckmol/blob/main/Resources/Speck-Thumbnail.png)](https://youtu.be/jUh923Z4fuk)
+[![How to Build PROTEIN VISUALIZATION WEB-APP using PYTHON and STREAMLIT | PART 1](https://github.com/avrabyt/st-speckmol/blob/main/Resources/Speck-Thumbnail.png)](https://youtu.be/jUh923Z4fuk)
 
 </details>
 
