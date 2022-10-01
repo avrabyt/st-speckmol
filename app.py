@@ -9,13 +9,15 @@ _A Streamlit **Component** for creating Speck molecular structures within Stream
 image = Image.open("Resources/mol.png")
 st.image(image)
 
-st.sidebar.header("Current stable release")
+st.sidebar.header("Check the latest version ⤵️")
 st.sidebar.markdown( 
 ''' 
-
+```python
 import st_speckmol
 
 st.write(st_speckmol.__version__)
+
+```
 
 ''')
 
