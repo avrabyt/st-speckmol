@@ -31,7 +31,7 @@ pip install --upgrade st-speckmol
 
 Try the app, for different examples. 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/avrabyt/specklit/main/app.py)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://avrabyt-st-speckmol-app-8piusd.streamlitapp.com)
 
 
 ## Quickstart
