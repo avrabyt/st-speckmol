@@ -62,7 +62,7 @@ res = speck_plot(example_xyz)
 
 </details>
 
-
+### [Blog Post](https://medium.com/@avra42/how-to-build-molecular-structures-visualizing-web-application-using-python-and-streamlit-5ec9da86550c) 
 ------------------------
 
 ## Related library - [Stmol](https://github.com/napoles-uach/stmol) 
