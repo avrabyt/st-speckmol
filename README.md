@@ -1,22 +1,14 @@
 # Stspeckmol
 A Streamlit Component for creating Speck molecular structures within Streamlit Web app.
 
-<table>
-    <tr>
-        <td>Latest Release</td>
-        <td>
-            <a href="https://pypi.org/project/st-speckmol/"/>
-            <img src="https://static.pepy.tech/badge/st-speckmol"/>
-        </td>
-    </tr>
-    <tr>
-        <td>PyPI Downloads</td>
-        <td>
-            <a href="https://pepy.tech/project/st-speckmol"/>
-            <img src="https://static.pepy.tech/badge/st-speckmol/month"/>
-        </td>
-    </tr>
-</table>
+[![PyPI version](https://badge.fury.io/py/st-speckmol.svg)](https://pypi.org/project/st-speckmol/)
+[![Downloads](https://pepy.tech/badge/st-speckmol)](https://pepy.tech/project/st-speckmol)
+[![Downloads](https://pepy.tech/badge/st-speckmol/month)](https://pepy.tech/project/st-speckmol)
+[![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://hellostspeckmol.streamlitapp.com)
+![GitHub last commit](https://img.shields.io/github/last-commit/avrabyt/st-speckmol?style=plastic)
+![GitHub Release Date](https://img.shields.io/github/release-date/avrabyt/st-speckmol)
+
+
 
 ## Installation 
 ```console
@@ -31,7 +23,7 @@ pip install --upgrade st-speckmol
 
 Try the app, for different examples. 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://avrabyt-st-speckmol-app-jwczwf.streamlitapp.com)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hellostspeckmol.streamlitapp.com)
 
 
 ## Quickstart
