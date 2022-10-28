@@ -19,6 +19,9 @@ to upgrade use,
 pip install --upgrade st-speckmol
 ```
 
+### ⭐️ Support me to keep this development going ☕️ 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/AvraCodes)
+
 ## Example
 
 Try the app, for different examples. 
