@@ -1,3 +1,4 @@
 streamlit
 st-speckmol
 Pillow 
+ipython_genutils
