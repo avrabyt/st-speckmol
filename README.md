@@ -18,6 +18,11 @@ to upgrade use,
 ```console
 pip install --upgrade st-speckmol
 ```
+>:warning: https://github.com/avrabyt/st-speckmol/issues/20 In case of `ModuleNotFoundError: No module named 'ipython_genutils'` :
+>```console
+> pip install ipython_genutils
+>```
+> **Future release of st-speckmol, will support this module natively.**
 
 ### ⭐️ Support me to keep this development going ☕️ 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/AvraCodes)
