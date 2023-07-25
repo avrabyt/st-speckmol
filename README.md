@@ -66,8 +66,9 @@ res = speck_plot(example_xyz)
 ------------------------
 
 ## Related library - [Stmol](https://github.com/napoles-uach/stmol) 
-
-During the development of the related and popular library [Stmol](https://github.com/napoles-uach/stmol), we introduced `speck_plot()` function for easy usage of both libraries simultaneously. However, the entire StSpeckmol has not yet been merged and extra(read new) functions such as `add_speck_param` is only available with this library.
+During the development of the related library [Stmol](https://github.com/napoles-uach/stmol), we introduced the convenient `speck_plot()` function, allowing seamless integration of both libraries. 
+> ℹ️
+> The complete integration of StSpeckmol **has not yet been finalized**, and any additional (or recently implemented) functionalities like `add_speck_param` will exclusively be accessible through this library."
 
 ```python
 # Installation of Stmol
@@ -78,19 +79,8 @@ from stmol import speck_plot
 
 ```
 
-Incase you are using `StSpeckmol` for scientific purposes for speck visualization, make sure you use `Stmol` (https://doi.org/10.3389/fmolb.2022.990846) and cite as following, 
-```console
-Nápoles-Duarte JM, Biswas A,Parker MI, Palomares-Baez JP, Chávez-Rojo MA and Rodríguez-Valdez LM (2022), 
-Stmol: A component for building interactive molecular visualizations within streamlit web-applications.
-Front. Mol. Biosci. 9:990846. doi: 10.3389/fmolb.2022.990846
-```
-
-
-
-
-
-_Note : Meanwhile,[ipyspeck](https://pypi.org/project/ipyspeck/) in their latest release ` 0.6.1 ` has added the stspec module [https://github.com/avrabyt/Specklit/issues/1#issuecomment-1134798584], therefore feel free to use whatever convinient, as long as you are interested to have fun with beautiful speck strcutures 🧬 and streamlit_ 🎈 🎉 
-
+### Scientfic usage
+To cite any scientific usage, please refer to the GitHub repository. Should you require additional assistance, feel free to reach out to me directly.
 
 ------------------------
 ## References
