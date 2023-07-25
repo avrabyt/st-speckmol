@@ -24,9 +24,6 @@ pip install --upgrade st-speckmol
 >```
 > **Future release of st-speckmol, will support this module natively.**
 
-### ⭐️ Support me to keep this development going ☕️ 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/AvraCodes)
-
 ## Example
 
 Try the app, for different examples. 
@@ -62,8 +59,11 @@ res = speck_plot(example_xyz)
 
 </details>
 
-### [Blog Post](https://medium.com/@avra42/how-to-build-molecular-structures-visualizing-web-application-using-python-and-streamlit-5ec9da86550c) 
-------------------------
+[Blog Post](https://medium.com/@avra42/how-to-build-molecular-structures-visualizing-web-application-using-python-and-streamlit-5ec9da86550c) 
+
+
+## Scientfic usage
+To cite any scientific usage, please refer to the GitHub repository [here](https://github.com/avrabyt/st-speckmol). Should you require additional assistance, feel free to reach out to me directly.
 
 ## Related library - [Stmol](https://github.com/napoles-uach/stmol) 
 During the development of the related library [Stmol](https://github.com/napoles-uach/stmol), we introduced the convenient `speck_plot()` function, allowing seamless integration of both libraries. 
@@ -79,10 +79,9 @@ from stmol import speck_plot
 
 ```
 
-### Scientfic usage
-To cite any scientific usage, please refer to the GitHub repository. Should you require additional assistance, feel free to reach out to me directly.
+## ⭐️ Support me to keep this development going ☕️ 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/AvraCodes)
 
-------------------------
 ## References
 
 [Speck Online](http://wwwtyro.github.io/speck/)
