@@ -7,6 +7,7 @@ A Streamlit Component for creating Speck molecular structures within Streamlit W
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://hellostspeckmol.streamlitapp.com)
 ![GitHub last commit](https://img.shields.io/github/last-commit/avrabyt/st-speckmol?style=plastic)
 ![GitHub Release Date](https://img.shields.io/github/release-date/avrabyt/st-speckmol)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11205344.svg)](https://doi.org/10.5281/zenodo.11205344)
 
 
 
@@ -63,7 +64,20 @@ res = speck_plot(example_xyz)
 
 
 ## Scientfic usage
-To cite any scientific usage, please refer to the GitHub repository [here](https://github.com/avrabyt/st-speckmol). Should you require additional assistance, feel free to reach out to me directly.
+To cite any scientific usage, please refer to the following citation:
+
+```
+@software{Biswas_2024,
+  author = {Avratanu Biswas},
+  title = {st-speckmol},
+  version = {v0.0.6.1},
+  doi = {10.5281/zenodo.11205344},
+  url = {https://github.com/avrabyt/st-speckmol},
+  date = {2024-05-16}
+}
+
+```
+For additional assistance, feel free to reach out to me directly.
 
 ## Related library - [Stmol](https://github.com/napoles-uach/stmol) 
 During the development of the related library [Stmol](https://github.com/napoles-uach/stmol), we introduced the convenient `speck_plot()` function, allowing seamless integration of both libraries. 
@@ -78,9 +92,6 @@ pip install stmol==0.0.9
 from stmol import speck_plot
 
 ```
-
-## ⭐️ Support me to keep this development going ☕️ 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/AvraCodes)
 
 ## References
 
