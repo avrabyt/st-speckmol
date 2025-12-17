@@ -1,9 +1,17 @@
 from .utils import *
 import streamlit.components.v1 as components
-import ipywidgets as widgets
-from ipywidgets import embed
-import ipyspeck
 from .version import __version__
+
+# Try to import the native Streamlit component from ipyspeck
+try:
+    from ipyspeck.stspeck import Speck as IpySpeck
+    _HAS_STSPECK = True
+except ImportError:
+    _HAS_STSPECK = False
+    # Fallback to ipywidgets approach (works locally but not on Streamlit Cloud)
+    import ipywidgets as widgets
+    from ipywidgets import embed
+    import ipyspeck
 
 def speck_plot(_xyz, wbox_height="700px", 
             wbox_width="800px",
@@ -50,18 +58,38 @@ def speck_plot(_xyz, wbox_height="700px",
         These keys are useful for modifying the molecule.
     
     """        
-    # Read the xyz file
-    speck_xyz = ipyspeck.speck.Speck(data = _xyz) 
-    if _PARAMETERS :
-        param = dict(*_PARAMETERS.values())
-        add_speck_param(speck_xyz,kwargs = param)
-    # Create the widget box
-    widg = widgets.Box([speck_xyz], layout=widgets.Layout(height=wbox_height,width=wbox_width))
-    # Embed the widget box in the streamlit html component
-    sc = embed.embed_snippet(widg)
-    html = embed.html_template.format(title="", snippet=sc)
-    components.html(html,height = component_h, width = component_w,scrolling=scroll)
-    return speck_xyz
+    # Use native Streamlit component if available (works on Streamlit Cloud)
+    if _HAS_STSPECK:
+        # Extract parameters from _PARAMETERS dict if provided
+        params = {}
+        if _PARAMETERS:
+            params = dict(*_PARAMETERS.values())
+        
+        # Set dimensions
+        params['width'] = wbox_width
+        params['height'] = wbox_height
+        
+        # Call the native Streamlit component
+        IpySpeck(data=_xyz, **params)
+        
+        # Return a mock object for compatibility (native component doesn't return speck object)
+        class MockSpeck:
+            def __init__(self):
+                self.data = _xyz
+        return MockSpeck()
+    else:
+        # Fallback to ipywidgets approach (works locally but not on Streamlit Cloud)
+        speck_xyz = ipyspeck.speck.Speck(data = _xyz) 
+        if _PARAMETERS :
+            param = dict(*_PARAMETERS.values())
+            add_speck_param(speck_xyz,kwargs = param)
+        # Create the widget box
+        widg = widgets.Box([speck_xyz], layout=widgets.Layout(height=wbox_height,width=wbox_width))
+        # Embed the widget box in the streamlit html component
+        sc = embed.embed_snippet(widg)
+        html = embed.html_template.format(title="", snippet=sc)
+        components.html(html,height = component_h, width = component_w,scrolling=scroll)
+        return speck_xyz
 
 def add_speck_param(xyz, **kwargs):
     '''
@@ -193,18 +221,38 @@ def spec_plot(_xyz, wbox_height="700px",
         These keys are useful for modifying the molecule.
     
     """        
-    # Read the xyz file
-    spec_xyz = ipyspeck.speck.Speck(data = _xyz) 
-    if _PARAMETERS :
-        param = dict(*_PARAMETERS.values())
-        add_spec_param(spec_xyz,kwargs = param)
-    # Create the widget box
-    widg = widgets.Box([spec_xyz], layout=widgets.Layout(height=wbox_height,width=wbox_width))
-    # Embed the widget box in the streamlit html component
-    sc = embed.embed_snippet(widg)
-    html = embed.html_template.format(title="", snippet=sc)
-    components.html(html,height = component_h, width = component_w,scrolling=scroll)
-    return spec_xyz
+    # Use native Streamlit component if available (works on Streamlit Cloud)
+    if _HAS_STSPECK:
+        # Extract parameters from _PARAMETERS dict if provided
+        params = {}
+        if _PARAMETERS:
+            params = dict(*_PARAMETERS.values())
+        
+        # Set dimensions
+        params['width'] = wbox_width
+        params['height'] = wbox_height
+        
+        # Call the native Streamlit component
+        IpySpeck(data=_xyz, **params)
+        
+        # Return a mock object for compatibility
+        class MockSpeck:
+            def __init__(self):
+                self.data = _xyz
+        return MockSpeck()
+    else:
+        # Fallback to ipywidgets approach (works locally but not on Streamlit Cloud)
+        spec_xyz = ipyspeck.speck.Speck(data = _xyz) 
+        if _PARAMETERS :
+            param = dict(*_PARAMETERS.values())
+            add_spec_param(spec_xyz,kwargs = param)
+        # Create the widget box
+        widg = widgets.Box([spec_xyz], layout=widgets.Layout(height=wbox_height,width=wbox_width))
+        # Embed the widget box in the streamlit html component
+        sc = embed.embed_snippet(widg)
+        html = embed.html_template.format(title="", snippet=sc)
+        components.html(html,height = component_h, width = component_w,scrolling=scroll)
+        return spec_xyz
 
 @deprecated('You must use add_speck_param instead. add_spec_param will be deprecated in future release. ')
 def add_spec_param(xyz, **kwargs):
