@@ -25,6 +25,9 @@ pip install --upgrade st-speckmol
 >```
 > **Future release of st-speckmol, will support this module natively.**
 
+## Update (v0.0.7 - Dec 2024)
+For Streamlit Cloud compatibility, `st-speckmol` now uses [ipyspeck](https://github.com/denphi/speck)'s native Streamlit component. All existing APIs remain unchanged.
+
 ## Example
 
 Try the app, for different examples. 
@@ -70,10 +73,10 @@ To cite any scientific usage, please refer to the following citation:
 @software{Biswas_2024,
   author = {Avratanu Biswas},
   title = {st-speckmol},
-  version = {v0.0.6.1},
+  version = {v0.0.7},
   doi = {10.5281/zenodo.11205344},
   url = {https://github.com/avrabyt/st-speckmol},
-  date = {2024-05-16}
+  date = {2024-12-17}
 }
 
 ```
@@ -95,9 +98,9 @@ from stmol import speck_plot
 
 ## References
 
-[Speck Online](http://wwwtyro.github.io/speck/)
+[Speck Online](http://wwwtyro.github.io/speck/) - Original WebGL molecular viewer by [@wwwtyro](https://github.com/wwwtyro)
 
-[Speck Python package](https://pypi.org/project/ipyspeck/)
+[ipyspeck](https://pypi.org/project/ipyspeck/) - Jupyter/Streamlit widget by [@denphi](https://github.com/denphi)
 
 [Example-Source](https://github.com/wwwtyro/speck/tree/gh-pages/static/samples)
 
